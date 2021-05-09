@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//Oyuncu Oluþturma
-		Gamer gamer1 = new Gamer(1, "Ýsmet", "Sandýkçý", LocalDate.of(yýl, ay, gün), "tc");
+		Gamer gamer1 = new Gamer(1, "Ýsmet", "Sandýkçý", LocalDate.of(2021, 5, 6), "tc");
 		
 		Gamer gamer2 = new Gamer();
 		gamer2.setId(1);
