@@ -2,7 +2,6 @@ package Ders5Odev1;
 
 import Ders5Odev1.adapter.GoogleAuthManagerAdapter;
 import Ders5Odev1.business.concretes.AuthManager;
-import Ders5Odev1.business.concretes.UserManager;
 import Ders5Odev1.dataAccess.concretes.HibernateUserDao;
 import Ders5Odev1.entities.concretes.LoginDto;
 import Ders5Odev1.entities.concretes.User;
@@ -16,7 +15,7 @@ public class Main {
 		User user4 = new User(4, "U", "User4", "user@user4", "123456");
 		User user5 = new User(5, "User", "5", "user@user5", "123456");
 		
-		AuthManager authManager = new AuthManager(new UserManager(new HibernateUserDao()));
+		AuthManager authManager = new AuthManager(new HibernateUserDao());
 		System.out.println("-----Basarisiz Kayitlar-----");
 		authManager.register(user2); //Kayit basarisiz mail hatasi
 		System.out.println("----------");
